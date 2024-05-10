@@ -152,7 +152,7 @@ jobs:
         fi
         
     - name: Setup LXC
-      if: env.ENABLE_LXC == 'true'
+      if: env.ENABLE_LXC == 'false'
       run: |
         cd $GITHUB_WORKSPACE/kernel_workspace/android-kernel
         rm -rf utils
